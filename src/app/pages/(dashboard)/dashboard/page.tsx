@@ -95,8 +95,10 @@ export default function Dashboard() {
             <div className='bg-[#F5F5F5] w-full font-serif pt-32 '>
                 <div className='w-full text-center flex flex-col gap-3'>
                     <p className='text-[#7BA003]'>what we do</p>
-                    <h2 className='font-semibold text-4xl text-[#002B5B]'>Delivering Solutions with Precision and Reliability</h2>
+                    <h2 className='font-semibold text-4xl text-[#002B5B]'>Delivering Solutions with <br />Precision and Reliability</h2>
+                    <p className='text-gray-500'>We provide comprehensive logistics and transportation solutions, ensuring safe, fast,and  <br /> efficient cargo movement worldwide. From freight forwarding and warehousing to supply <br /> chain management, we handle every aspect of logistics with precision and reliability.</p>
                 </div>
+
                 <div className="w-full overflow-hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-10 px-20">
                     {btns.map((btn) => (
                         <div key={btn.id} className="flex items-center bg-[#7BA003] text-white px-5 py-3 w-[250px]">
@@ -111,7 +113,7 @@ export default function Dashboard() {
                     ))}
                 </div>
             </div>
-
+            
             <section><Testimonials1 /></section>
             <section className="flex flex-col lg:flex-row items-center justify-between gap-2 pt-10 px-8 lg:px-20 py-12">
                 <div className="max-w-2xl">
