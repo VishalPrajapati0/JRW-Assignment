@@ -27,10 +27,10 @@ export default function Dashboard() {
 
     return (
         <div className="w-full h-screen flex flex-col bg-white font-serif">
-            <Navbar   />
+            <Navbar />
 
-       <div className="relative text-white w-[500px] py-0 lg:py-28 h-full sm:w-[500px] lg:w-full bg-cover bg-center flex items-center lg:px-10 px-0"
-     style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img2.svg')" }}>
+            <div className="relative text-white w-[500px] py-0 lg:py-28 h-full sm:w-[500px] lg:w-full bg-cover bg-center flex items-center lg:px-10 px-0"
+                style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img2.svg')" }}>
 
                 <div className="wrapper w-[68%] ml-[43px] mt-[60px] md:w-[75%] flex flex-col gap-y-6">
                     <h1 className="text-[26px] lg:text-[52px] sm:text-[26px] font-semibold leading-[1.1] w-[92%]">
@@ -127,46 +127,45 @@ export default function Dashboard() {
 
             <section><Testimonials1 /></section>
 
-            {/* <div className='w-full pt-10 mt-10 bg-cover bg-center bg-no-repeat '
+            <div className='lg:w-full w-[500px] grid grid-cols-1 pt-10 mt-10 bg-cover bg-center bg-no-repeat '
                 style={{ backgroundImage: "linear-gradient(rgba(120, 160, 3, .85), rgba(120, 160, 3, .85)),url('/map.svg')" }}
             >
 
-                <div className='flex justify-between gap-10 px-20 pt-4'>
+                <div className='lg:flex  grid grid-cols-1 justify-between w-full gap-1 px-16 pt-4'>
 
-                    <section className='px-2 flex flex-col gap-2.5'>
+                    <section className=' flex flex-col gap-2.5'>
                         <p className='font-semibold'>Dedicated Customer Teams & An Agile Service</p>
-                        <h1 className='lg:text-4xl lg:w-[600px] font-semibold '>
+                        <h1 className='lg:text-4xl lg:w-[600px] font-bold '>
                             Providing Full Range Of Services In The Sphere Of Transportation Worldwide For Any Cargo Type!
                         </h1>
                     </section>
-                    <section className='pt-28 '>
-                        <p>We offer comprehensive logistics solutions tailored to handle all types of cargo with efficiency and care. Our global network ensures seamless transportation, delivering reliability.</p>
+                    <section className='lg:pt-28 pt-2 w-[330px]  '>
+                        <p className='w-[330px]'>We offer comprehensive logistics solutions tailored to handle all types of cargo with efficiency and care. Our global network ensures seamless transportation, delivering reliability.</p>
                     </section>
-                    <Image className='lg:mb-[145px]' src="/66.svg" height={100} width={100} alt="" />
+                    <Image className='lg:mb-[145px] hidden lg:block ' src="/66.svg" height={10} width={60} alt="" />
                 </div>
 
-                <div className=' flex px-20 pt-10  '>
+                <div className=' lg:flex px-20 pt-10   grid grid-cols-1'>
 
-                    <section className='flex flex-col p-4 justify-center w-[30%] gap-3 bg-[#093254] text-[#093254]'>
+                    <section className='flex flex-col lg:w-[30%] p-4 justify-center w-[385] gap-3 bg-[#093254] text-[#093254]'>
                         {store.map((items) => (
                             <h1 key={items.id} className='bg-white p-4 gap-1.5 flex font-semibold'>{items.icon} {items.h1}</h1>
 
                         ))}
                     </section>
-
-                    <section className='bg-white flex p-2 gap-4 w-[70%]' >
-                        <Image src="/77.svg" width={400} height={300} alt="" className='p-4' />
-                        <section className=' w-[500px] justify-center items-center text-center flex flex-col gap-4 '>
-                            <h2 className="text-[#093254] text-start bg-white font-semibold text-xl">Connect Your Store To Our Database And Send Your Products To Our Warehouse</h2>
-                            <p className='text-gray-400 text-start bg-white'>Easily integrate your store with our advanced database for smooth inventory management. Send your products to our secure warehouse, where we handle storage.</p>
-                            <p className='text-gray-400 text-start bg-white lg:w-[300px] lg:mr-8'>packaging, and shipping with precision and care.</p>
+                    <br />
+                    <section className='bg-white lg:flex relative lg:w-[71%] p-2 gap-3 w-[360px]' >
+                        <Image src="/77.svg" width={350} height={300} alt="" className='p-2' />
+                        <section className='justify-center items-center text-center flex flex-col gap-3 '>
+                            <h2 className="text-[#093254] w-[300px] mr-[10px] text-start bg-white font-semibold text-xl">Connect Your Store To Our Database And Send Your Products To Our Warehouse</h2>
+                            <p className='text-gray-400 w-[315px] text-start bg-white'>Easily integrate your store with our advanced database for smooth inventory management. Send your products to our secure warehouse, where we handle storage.</p>
+                            <p className='text-gray-400 text-start  bg-white lg:w-[310px] w-[308px] '>packaging, and shipping with precision and care.</p>
                         </section>
                     </section>
                 </div>
                 <br />
                 <br />
-                <br />
-            </div> */}
+            </div>
 
 
             <section className="flex flex-col w-[500px] lg:w-full lg:flex-row items-center justify-between gap-2 pt-10 px-8 lg:px-20 py-12">

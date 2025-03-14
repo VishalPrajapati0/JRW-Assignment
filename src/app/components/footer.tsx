@@ -34,7 +34,7 @@ export default function Footer() {
                         <div>
                             <h3 className="text-[#88AA00] font-bold mb-3">Quick Links</h3>
                             <ul className="space-y-2 text-gray-300 flex flex-col text-sm text-center items-start">
-                                {["Home", "Contact Us", "Request A Quote", "Calculations", "Services"].map((item, index) => (
+                                {["Home", "Contact Us", "Request", "Calculations", "Services"].map((item, index) => (
                                     <li key={index} className="flex items-center">
                                         <KeyboardArrowRightIcon sx={{ color: "#88AA00" }} className="mr-1 text-center" />
                                         {item}
@@ -47,7 +47,7 @@ export default function Footer() {
                         <div>
                             <h3 className="text-[#88AA00] font-bold mb-3">Services</h3>
                             <ul className="space-y-2 text-gray-300 text-sm">
-                                {["Freight Management", "Custom Brokerage", "Technology", "Industry Logistics", "Supply Chain Solutions"].map((item, index) => (
+                                {["Freight", "Brokerage", "Technology", "Logistics", "Supply"].map((item, index) => (
                                     <li key={index} className="flex items-center">
                                         <KeyboardArrowRightIcon sx={{ color: "#88AA00" }} className="mr-1" />
                                         {item}
@@ -60,7 +60,7 @@ export default function Footer() {
                         <div>
                             <h3 className="text-[#88AA00] font-bold mb-3">More Services</h3>
                             <ul className="space-y-2 text-gray-300 text-sm">
-                                {["Ground Transportation", "Warehousing", "Project Logistics", "Find on Maps"].map((item, index) => (
+                                {[" Transportation", "Warehousing", "Project-Logist", "Find on Maps"].map((item, index) => (
                                     <li key={index} className="flex items-center">
                                         <KeyboardArrowRightIcon sx={{ color: "#88AA00" }} className="mr-1" />
                                         {item}

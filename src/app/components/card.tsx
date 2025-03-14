@@ -52,7 +52,7 @@ export default function Card(){
                   </div>
                   <div className="grid lg:w-[1000px] grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 pl-10 sm:pl-5 md:pl-10 lg:pl-10 w-full pt-20 gap-28">
                       {services.map((service, index) => (
-                          <div key={index} className="relative w-[380px] group">
+                          <div key={index} className="relative w-[380px] lg:ml-0 ml-[35px] group">
                               {/* Background Image */}
                               <Image
                                   src={service.backgroundImage}
@@ -66,8 +66,8 @@ export default function Card(){
                                   <div className="absolute bottom-0 cursor-pointer left-40 transform -translate-x-1/2 bg-white p-5 shadow-lg w-[290px] transition-all duration-300 group-hover:bg-[#7BA003] group-hover:text-white">
                                       <div className="flex items-center gap-12">
                                           <h3 className="text-[#093254] font-semibold text-[18px] ml-3 group-hover:text-white">{service.title}</h3>
-                                          <div className="bg-[#7BA003] p-3 rounded-full flex items-center justify-center group-hover:bg-white">
-                                              <Image src={service.icon} alt="Service Icon" width={30} height={30} className="group-hover:invert" />
+                                          <div className="bg-[#7BA003] p-3 rounded-full flex items-center justify-center  group-hover:bg-[#093254]">
+                                              <Image src={service.icon} alt="Service Icon" width={30} height={30} className="group-hover:contrast-200" />
                                           </div>
                                       </div>
                                       <p className="text-gray-600 mt-2 w-[200px] group-hover:text-white">

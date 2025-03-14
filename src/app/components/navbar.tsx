@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import MenuIcon from '@mui/icons-material/Menu';
+
 
 const pages = ['Home', 'Services', 'Contact Us', 'Calculations'];
 
@@ -13,16 +15,14 @@ export default function ResponsiveAppBar() {
     };
 
     return (
-        <nav className="bg-white shadow-none h-[78px]  px-7 flex items-center justify-between w-full">
+        <nav className="bg-white shadow-none h-[78px] w-[500px]  px-7 flex items-center justify-between lg:w-full">
             <div>
                 <Image src="/logo.svg" alt="Logo" width={90} height={70} priority />
             </div>
             {/* Mobile Menu Button */}
             <div className="md:hidden">
                 <button onClick={handleToggleMenu} className="text-black focus:outline-none">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-                    </svg>
+                   <MenuIcon />
                 </button>
             </div>
             {/* Mobile Menu */}
