@@ -42,7 +42,7 @@ export default function Card(){
     ];
 
     return(
-     <div className="w-full block">
+     <div className="lg:w-full w-[500px]  pt-10 block">
                   {/* Title Section */}
                   <div className="w-full text-center">
                       <p className="text-[#7BA003] font-semibold">Services we offer</p>
@@ -50,7 +50,7 @@ export default function Card(){
                           Specialist Logistics & <br /> Transportation Services
                       </h2>
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 pl-10 sm:pl-5 md:pl-10 lg:pl-20 w-full pt-20 gap-4">
+                  <div className="grid lg:w-[1000px] grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 pl-10 sm:pl-5 md:pl-10 lg:pl-10 w-full pt-20 gap-28">
                       {services.map((service, index) => (
                           <div key={index} className="relative w-[380px] group">
                               {/* Background Image */}

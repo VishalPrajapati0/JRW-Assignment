@@ -8,9 +8,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-         <body style={{ background: "#F5F5F5" }}
-      >
-        <Dashboard/>
+      <body style={{ background: "#F5F5F5" }}
+        className="lg:w-[100%] sm:w-[500px] "  >
+        <Dashboard />
       </body>
     </html>
   );

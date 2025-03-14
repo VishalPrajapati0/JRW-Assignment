@@ -7,14 +7,14 @@ export default function ImageSec(){
         <div>
 
             {/* section-3 */}
-            <section className="w-full flex flex-col md:flex-row items-center pt-10 px-5 md:px-20">
+            <section className="lg:w-full w-[500px]  flex flex-col md:flex-row items-center pt-10 px-5 md:px-20">
                 {/* Left Side - Image */}
                 <div className="md:w-1/2 w-full flex justify-center">
                     <Image src="/img-3.svg" width={580} height={600} alt="Logistics Image" />
                 </div>
 
                 {/* Right Side - Text Content */}
-                <div className="md:w-1/2 w-full mt-1 lg:mt-[-50px] md:mt-0 text-gray-800">
+                <div className="md:w-1/2 w-full  lg:mt-[-18px] mt-[36px] text-gray-800">
                     <h2 className="text-[#7BA003] font-bold text-lg">
                         Affordable Price, Certified Forwarders
                     </h2>

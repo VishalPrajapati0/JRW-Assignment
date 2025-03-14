@@ -47,7 +47,7 @@ export default function Card(){
 
 
         <div
-        className="relative text-white mt-14 py-12 h-full w-full flex items-center px-20 bg-cover bg-center bg-no-repeat"
+        className="relative text-white mt-14 py-12 h-full w-[500px] lg:w-full flex items-center px-20 bg-cover bg-center bg-no-repeat"
         style={{
             backgroundImage: "linear-gradient(89.73deg, #093254 .23%, #093254 34.08%, rgba(9, 50, 84, 0.55) 99.77%), url('https://res.cloudinary.com/dfzbpqzev/image/upload/v1740938266/home/gvaalvqtr8daloknub9m.svg')"
         }}
@@ -80,16 +80,16 @@ export default function Card(){
 
     
     <div className='w-full pt-20 lg:px-12 px-[1px] md:px-[25px] '>
-                <div className='px-12'>
+                <div className='px-12 lg:w-full w-[500px]'>
                     <p className='text-[#7BA003] font-semibold'>Request A Quote</p>
                     <div className="largeMonitor:w-[60%] leading-2.5 sm:w-[70%] lg:w-[85%]">
-                        <h2 className="undefined text-4xl text-[#002B5B] font-sans leading-[1.2] font-semibold text-themeBlue">Booking your Logistic product transportation good <br /> Solution in the world</h2>
+                        <h2 className="undefined text-4xl text-[#002B5B] font-sans leading-[1.2]  text-themeBlue">Booking your Logistic product transportation good <br /> Solution in the world</h2>
                     </div>
 
                 </div>
                 <div className="w-full pt-10 lg:px-12 px-2 lg:flex sm:grid-cols-2 grid    gap-5">
                     {/* First Section */}
-                    <div className="w-[500px]">
+                    <div className="w-[463px] lg:w-[500px]">
                         <input
                             type="text"
                             id="service"
@@ -112,7 +112,7 @@ export default function Card(){
                     </div>
 
                     {/* Second Section (Optional) */}
-                    <div className="w-[500px]">
+                    <div className="w-[463px] lg:w-[500px]">
                         <div className="w-full grid grid-cols-2 gap-4">
                             <h2 className="text-2xl bg-[#002B5B] text-white font-semibold capitalize p-3 text-center">origin</h2>
                             <h2 className="text-2xl bg-[#002B5B] text-white font-semibold capitalize p-3 text-center">Destination</h2>
